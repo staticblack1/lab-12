@@ -2,7 +2,6 @@ import json
 import os.path
 import random
 import re
-from pydoc import plaintext
 
 HOW_MANY_BOOK =3
 LINE = 128
@@ -135,7 +134,7 @@ def main():
                     continue
                 case 3:
                     break
-        except valueError:
+        except ValueError:
             print("improper input")
 
 if __name__ == '__main__':
